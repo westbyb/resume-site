@@ -1,0 +1,248 @@
+body, .details {
+  background: #ccc;
+}
+
+#page {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.hide {
+    position: absolute;
+    display: block;
+    top: -9999em;
+    left: -9999em;
+}
+
+.clear { clear: both; }
+
+.half {
+    float: left;
+    width: 50%;
+}
+
+.header, .experiences, .details {
+    padding: 20px;    
+}
+
+.header {
+  background: #222;
+  color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  height: 130px;
+  
+  /* rgba is a different way of expressing color in
+     terms of its RGB components with Alpha (transparency) */
+  -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.6);
+  
+  text-shadow: 1px 1px 0 #000;
+}
+
+.header .name {
+    float: left;
+    width: 300px;
+}
+
+.header h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.header h2 {
+  font-family: "Georgia", Serif;      
+  font-weight: normal;
+  font-style: italic;
+  color: #666;
+}
+
+.header dl {
+    float: right;
+    margin: 0;
+}
+
+.header .scalebutton {
+    float: left;
+    margin; 0;
+}
+
+.scalebutton {
+  height: 80px;
+  width: 80px;
+  margin: 50px;
+  position: relative;
+  overflow: hidden;
+  float: right;
+  
+  -webkit-border-radius: 40px;
+     -moz-border-radius: 40px;
+          border-radius: 40px;
+          
+  -webkit-transition: width 1s ease;
+     -moz-transition: width 1s ease;
+       -o-transition: width 1s ease;
+      -ms-transition: width 1s ease;
+     	transition: width 1s ease;
+}
+
+.scalebutton:hover {
+  width:275px;
+}
+
+.resume{
+  background: #ccc;
+}
+
+.scalebutton a {
+  color: white;
+  text-decoration: none;
+}
+
+.scalebutton p {
+  font: 30px/1 Helvetica, Arial, sans-serif;
+  text-align: center;
+  color: white;
+  margin: 14px 0 0 65px;
+  width: 180px;
+}
+
+.scalebutton p small {
+  font-size: 15px;
+}
+
+.resume p:before {
+  content: "K";
+  position: absolute;
+  font: 70px/1 'ModernPictogramsNormal', Helvetica, sans-serif;
+  top: 8px;
+  left: 16px;
+}
+
+@font-face {
+  font-family: 'ModernPictogramsNormal';
+  src: url('../modernpics-webfont.eot');
+  src: url('../modernpics-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../modernpics-webfont.woff') format('woff'),
+    url('../modernpics-webfont.ttf') format('truetype'),
+    url('../modernpics-webfont.svg#ModernPictogramsNormal') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.experiences {
+  background: #eee;
+  margin-top: 170px;
+}
+
+.experiences h3 {
+    font-size: 30px;
+    line-height: 36px;
+    margin: 0 -20px 20px -20px;
+    padding: 0 20px 10px 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.experiences h4 {
+    float: left;
+}
+
+.experiences h5,
+.experiences h6 {
+    float: right;
+}
+
+.experiences h6 {
+    clear: right;
+}
+
+.experiences ul {
+    clear: both;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+.programming h3, .education h3 {
+  font-family: Georgia, Serif;
+  font-weight: normal;
+  font-size: 24px;
+}
+
+.programming ul, .education ul{
+    list-style-type: none;
+    margin: 0 0 10px 0;
+}
+
+.programming ul li {
+    float: left;
+    margin: 0 5px 5px 0;
+    font-size: 90%;
+    background: #b3b3b3;
+    padding: 4px;
+    
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.education ul li {
+    float: left;
+    margin: 0 5px 5px 0;
+    font-size: 90%;
+    background: #b3b3b3;
+    padding: 4px;
+    
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.programming h6 {
+    clear: left;
+}
+
+.education h6 {
+  float: right;
+}
+
+.tex sub, .latex sub {
+  vertical-align: -0.5ex;
+  margin-left: -0.1667em;
+  margin-right: -0.125em;
+}
+
+.latex sup {
+  font-size: 0.85em;
+  vertical-align: 0.15em;
+  margin-left: -0.36em;
+  margin-right: -0.15em;
+}
+
+dl dt {
+  color: #555;
+}
+
+dl dd {
+    margin: 0 0 10px 0;
+}
+
+.education dl dd:first-of-type {
+  font-weight: bold;
+  font-size: 16px;
+  clear: left;      
+}
+
+.education dl dd:not(:first-of-type) {
+  color: #666;
+  float: left;
+}    
+
+.education dl dt:not(:first-of-type) {
+  float: left;
+  clear: left;
+  width: 70px;
+}
